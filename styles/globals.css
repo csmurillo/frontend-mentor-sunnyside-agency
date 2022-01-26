@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+/* font-family: 'Fraunces', serif; */
+#__next{
+    width:100%; height:100%;
+}
+html,
+body {
+    width:100%; height:100%;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spacebetween{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}

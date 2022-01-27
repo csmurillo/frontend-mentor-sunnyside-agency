@@ -41,6 +41,9 @@ const FooterLink=styled.a`
     text-align:center;
     color:hsl(168,34%,45%);
     font-size:1.2em;
+    @media (min-width: 768px){
+        width:10%;
+    }
 `;
 const FooterSocialsContainer=styled.div`
     width:100%;

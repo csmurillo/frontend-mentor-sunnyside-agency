@@ -31,6 +31,11 @@ const ImagesContainer=styled.div`
     margin: 0;
     padding: 0;
     border: 0;
+    @media (min-width: 768px){
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: 
+    "image-1 image-2 image-3 image-4";
+    }
 `;
 const ImageGalleryContainer1 = styled.div`
     grid-area:image-1;

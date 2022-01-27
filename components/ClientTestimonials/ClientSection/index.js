@@ -27,7 +27,6 @@ const ClientSection = ({client}) =>{
 };
 
 const ClientSectionContainer=styled.div`
-
 `;
 const ClientSectionImageContainer=styled.div`
     padding-top:50px;

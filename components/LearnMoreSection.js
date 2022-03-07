@@ -47,11 +47,11 @@ const LearnMoreImage = styled.img`
     grid-area:LearnMoreImage;
 `;
 const LearnMoreContainer = styled.div`
+    background-color:rgb(255,251,248);
     padding:50px 25px 60px 25px;
     grid-area:LearnMore;
     @media (min-width: 768px){
         padding:19%;
-        background-color:white;
     }
 `;
 const LearnMore = styled.div`
@@ -59,46 +59,46 @@ const LearnMore = styled.div`
     width:100%;
 `;
 const LearnMoreHeader = styled.h1`
-text-align:center;
-font-weight:900;
-@media (min-width: 768px){
-    text-align:start;
-    padding-right:120px;
-}
+    text-align:center;
+    font-weight:900;
+    @media (min-width: 768px){
+        text-align:start;
+        padding-right:120px;
+    }
 `;
 const LearnMoreContent = styled.div`
-font-family: 'Barlow', sans-serif;
-text-align:center;
-font-size:1.05em;
-font-weight:600;
-line-height: 1.8em;
-margin-bottom:30px;
-color: hsl(210, 4%, 67%);
-@media (min-width: 768px){
-    text-align:start;
-}
+    font-family: 'Barlow', sans-serif;
+    text-align:center;
+    font-size:1.05em;
+    font-weight:600;
+    line-height: 1.8em;
+    margin-bottom:30px;
+    color: hsl(210, 4%, 67%);
+    @media (min-width: 768px){
+        text-align:start;
+    }
 `;
 const LearnMoreLink = styled.a`
-width:100%;
-font-weight:900;
-display:flex;
-justify-content:center;
-@media (min-width: 768px){
+    width:100%;
+    font-weight:900;
     display:flex;
-    justify-content:flex-start;
-}
-& span{
-    display:inline-block;
-    &::after{
-        content: '';
-        height: 8px;
-        background:${props=>props.underlineColor};
-        border-radius: 5px;
-        display: block;
-        margin-top: -7px;
-        width: 110%;
-        margin-left: -5%;
+    justify-content:center;
+    @media (min-width: 768px){
+        display:flex;
+        justify-content:flex-start;
     }
-}
+    & span{
+        display:inline-block;
+        &::after{
+            content: '';
+            height: 8px;
+            background:${props=>props.underlineColor};
+            border-radius: 5px;
+            display: block;
+            margin-top: -7px;
+            width: 110%;
+            margin-left: -5%;
+        }
+    }
 `;
 export default LearnMoreSection;

@@ -27,6 +27,7 @@ const ClientSection = ({client}) =>{
 };
 
 const ClientSectionContainer=styled.div`
+    padding: 0px 20px 0px 20px;
 `;
 const ClientSectionImageContainer=styled.div`
     padding-top:50px;
@@ -43,6 +44,7 @@ const ClientSectionContent=styled.div`
     font-family: 'Barlow', sans-serif;
     text-align:center;
     line-height:1.8em;
+    color: hsl(213, 9%, 39%);
 `;
 const ClientSectionPersonalInformationContainer=styled.div`
 
@@ -57,6 +59,9 @@ padding:10px;
 margin-bottom:5px;
 `;
 const ClientSectionProfession=styled.div`
+font-size:.8em;
+color:hsl(210, 4%, 67%);
 text-align:center;
+font-weight:700;
 `;
 export default ClientSection;

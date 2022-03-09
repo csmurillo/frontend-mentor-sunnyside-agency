@@ -24,12 +24,12 @@ const MainSection = () =>{
 
 const MainSectionContainer = styled.div`
     position:relative;
-    background-image:url(/images/desktop/image-header.jpg);
+    background-image:url(./images/desktop/image-header.jpg);
     background-position:center;
     background-size: cover;
     height:565px;
     @media (min-width: 768px){
-        background-image:url(/images/desktop/image-header.jpg);
+        background-image:url(./images/desktop/image-header.jpg);
         background-position:center;
         background-size: cover;
         min-height:${props=>props.minHeight};

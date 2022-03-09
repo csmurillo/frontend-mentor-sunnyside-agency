@@ -11,10 +11,10 @@ const Header = () =>{
     return (
         <HeaderContainer>
             <LogoContainer className='center'>
-                <Logo src="/images/logo.svg"></Logo>
+                <Logo src="./images/logo.svg"></Logo>
             </LogoContainer>
             <HamburgerContainer className='center'>
-                <HamburgerIcon src="/images/icon-hamburger.svg" onClick={menuClick}></HamburgerIcon>
+                <HamburgerIcon src="./images/icon-hamburger.svg" onClick={menuClick}></HamburgerIcon>
             </HamburgerContainer>
             <DesktopNavLinks>
                 <DesktopLinks className='center'><p>About</p></DesktopLinks>

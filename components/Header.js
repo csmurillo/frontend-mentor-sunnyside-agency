@@ -21,7 +21,7 @@ const Header = () =>{
                 <DesktopLinks className='center'><p>Services</p></DesktopLinks>
                 <DesktopLinks className='center'><p>Projects</p></DesktopLinks>
                 <DesktopLinks>
-                    <ContactButton>CONTACT</ContactButton>
+                    <ContactButton color={'white'} highlightColor={'rgba(255, 255, 255, 0.3)'}>CONTACT</ContactButton>
                 </DesktopLinks>
             </DesktopNavLinks>
             {menuActive &&
@@ -49,10 +49,8 @@ const HeaderContainer = styled.header`
     justify-content:space-between;
 `;
 const LogoContainer= styled.div`
-
 `;
 const Logo = styled.img`
-
 `;
 const HamburgerContainer=styled.div`
     @media (min-width: 768px){
@@ -71,7 +69,7 @@ const DesktopNavLinks= styled.nav`
     }
 `;
 const DesktopLinks=styled.div`
-    padding:0px 20px 0px 20px;
+    padding:0px 35px 0px 35px;
     color:white;
     & p {
         margin:0;
@@ -90,6 +88,12 @@ const ContactButton=styled.button`
     padding: 18px 30px;
     &:hover{
         cursor:pointer;
+    }
+    @media (min-width:768px){
+        &:hover{
+            background-color:${props=>props.highlightColor};
+            color:white;
+        }
     }
 `;
 const MobileNavLinksContainer=styled.div`
@@ -126,9 +130,8 @@ const MobileLinks=styled.div`
     background-color:white;
     padding: 20px 0px 20px 0px;
     & p {
-        color:hsl(167, 40%, 24%);
+        color: hsl(232, 10%, 55%);
         font-weight:600;
-        color:hsl(167, 40%, 24%);
         padding: 0;
         margin: 0;
         &:hover{

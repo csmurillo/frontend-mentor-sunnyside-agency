@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ClientSection from './ClientSection'
 import { clientData } from './ClientData';
 
-const ClientTestimonials = ({imageDescriptionSectionName,title,content,imgSrc}) =>{
+const ClientTestimonials = () =>{
     return (
         <ClientTestimonialsContainer>
             <ClientTestimonialsTitleContainer>
@@ -16,7 +16,7 @@ const ClientTestimonials = ({imageDescriptionSectionName,title,content,imgSrc}) 
     );
 };
 const ClientTestimonialsContainer=styled.div`
-    padding:80px 35px 80px 35px;
+    padding:60px 35px 60px 35px;
     background-color:rgb(255,251,248);
     @media (min-width: 768px){
         padding: 10% 10% 10% 10%;
@@ -27,13 +27,10 @@ const ClientTestimonialsTitleContainer=styled.div``;
 const ClientTestimonialsTitle=styled.h1`
     font-family: 'Fraunces', serif;
     font-size:1.1em;
-    color:hsl(232, 10%, 55%);
-    // letter-spacing:2px;
+    font-weight:700;
+    color:hsl(210, 4%, 67%);
     letter-spacing: 0.15em;
     text-align:center;
-    @media (min-width: 768px){
-        // display:flex;
-    }
 `;
 const ClientSectionContainer=styled.div`
     display:flex;
@@ -42,7 +39,6 @@ const ClientSectionContainer=styled.div`
         flex-direction:row;
         justify-content:center;
         align-items:center;
-        // display:flex;
     }
 `;
 

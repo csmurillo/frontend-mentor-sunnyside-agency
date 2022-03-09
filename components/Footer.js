@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {ReactComponent as Logo} from '../public/images/logo.svg';
 import {ReactComponent as FooterSocialFB} from '../public/images/icon-facebook.svg';
 import {ReactComponent as FooterSocialIG} from '../public/images/icon-instagram.svg';
 import {ReactComponent as FooterSocialTwitter} from '../public/images/icon-twitter.svg';
@@ -8,7 +9,9 @@ import {ReactComponent as FooterSocialPinterest} from '../public/images/icon-pin
 const Footer = () =>{
     return (
         <FooterContainer>
-            <FooterTitleContainer>sunnyside</FooterTitleContainer>
+            <FooterTitleContainer className='center'>
+              <LogoSvg></LogoSvg>
+            </FooterTitleContainer>
             <FooterLinkContainer className='center'>
                   <FooterLinkWrap>
                     <FooterLink>About</FooterLink>
@@ -36,15 +39,17 @@ const Footer = () =>{
     );
 };
 const FooterContainer=styled.div`
-    padding:40px;
-    background-color:hsl(168, 34%, 70%);
-    font-family: 'Barlow', sans-serif;
+  padding:80px 40px 80px 40px;
+  background-color:hsl(168, 34%, 70%);
+  font-family: 'Barlow', sans-serif;
 `;
 const FooterTitleContainer=styled.div`
-    text-align:center;
-    color:hsl(168,34%,28%);
-    font-weight:600;
-    font-size:2.5em;
+`;
+const LogoSvg =styled(Logo)`
+  transform: scale(1.5);
+  & path{
+    fill:rgb(44, 117, 102);
+  }
 `;
 const FooterLinkContainer=styled.div`
     padding:50px 0px 80px 0px;
@@ -76,42 +81,51 @@ const FooterSocialFBContainer=styled.div`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
-    &:hover * {
-      fill:white;
-      cursor:pointer;
-    }
 `;
 const FooterSocialFBSvg = styled(FooterSocialFB)`
+  & path{
+    &:hover{
+      fill:white;
+        cursor:pointer;
+    }
+  }
 `;
 const FooterSocialIGContainer=styled.div`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
-    &:hover * {
-      fill:white;
-      cursor:pointer;
-    }
 `;
-const FooterSocialIGSvg =styled(FooterSocialIG)``;
+const FooterSocialIGSvg =styled(FooterSocialIG)`
+& path{
+  &:hover{
+    fill:white;
+      cursor:pointer;
+  }
+}
+`;
 const FooterSocialTwitterContainer=styled.div`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
-    &:hover * {
-      fill:white;
-      cursor:pointer;
-    }
 `;
-const FooterSocialTwitterSvg=styled(FooterSocialTwitter)``;
+const FooterSocialTwitterSvg=styled(FooterSocialTwitter)`
+& path{
+  &:hover{
+    fill:white;
+      cursor:pointer;
+  }
+}`;
 const FooterSocialPinterestContainer=styled.div`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
-  &:hover * {
-    fill:white;
-    cursor:pointer;
-  }
 `;
-const FooterSocialPinterestSvg=styled(FooterSocialPinterest)``;
+const FooterSocialPinterestSvg=styled(FooterSocialPinterest)`
+& path{
+  &:hover{
+    fill:white;
+      cursor:pointer;
+  }
+}`;
 
 export default Footer;

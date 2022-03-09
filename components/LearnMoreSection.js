@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-const LearnMoreSection = ({id,title,content,imgSrcMobile,imgSrcDesktop, linkUnderlineColor}) =>{
+const LearnMoreSection = ({id,title,content,imgSrcMobile,imgSrcDesktop, linkUnderlineColor,hoverLinklineColor}) =>{
 
     const [screenSize,setScreenSize] = useState(null);
     useEffect(()=>{
         window.addEventListener('resize',()=>{
-            // console.log(window.innerWidth);
             setScreenSize(window.innerWidth);
         });
     },[]);
@@ -22,7 +21,7 @@ const LearnMoreSection = ({id,title,content,imgSrcMobile,imgSrcDesktop, linkUnde
                     <LearnMoreContent>
                         <p>{content}</p>
                     </LearnMoreContent>
-                    <LearnMoreLink underlineColor={linkUnderlineColor}><span>LEARN MORE</span></LearnMoreLink>
+                    <LearnMoreLink underlineColor={linkUnderlineColor} hoverUnderlineColor={hoverLinklineColor}><span>LEARN MORE</span></LearnMoreLink>
                 </LearnMore>
             </LearnMoreContainer>
         </LearnMoreSectionContainer>
@@ -73,7 +72,7 @@ const LearnMoreContent = styled.div`
     font-weight:600;
     line-height: 1.8em;
     margin-bottom:30px;
-    color: hsl(210, 4%, 67%);
+    color: hsl(232, 10%, 55%);
     @media (min-width: 768px){
         text-align:start;
     }
@@ -91,13 +90,26 @@ const LearnMoreLink = styled.a`
         display:inline-block;
         &::after{
             content: '';
-            height: 8px;
+            height: 10px;
             background:${props=>props.underlineColor};
             border-radius: 5px;
             display: block;
-            margin-top: -7px;
+            margin-top: -8px;
             width: 110%;
             margin-left: -5%;
+        }
+        &:hover{
+            &::after{
+                content: '';
+                height: 10px;
+                background:${props=>props.hoverUnderlineColor};
+                border-radius: 5px;
+                display: block;
+                margin-top: -8px;
+                width: 110%;
+                margin-left: -5%;
+            }
+            cursor:pointer;
         }
     }
 `;

@@ -10,14 +10,14 @@ export const clientData=[
         id:2,
         image:'/images/image-thomas.jpg',
         content:'Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.',
-        clientName:'Jennie F.',
-        clientProfession:'Business Owner'
+        clientName:'Thomas S.',
+        clientProfession:'Chief Operating Officer'
     },
     {
         id:3,
         image:'/images/image-jennie.jpg',
         content:'Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!',
-        clientName:'Thomas S.',
-        clientProfession:'Chief Operating Officer'
+        clientName:'Jennie F.',
+        clientProfession:'Business Owner'
     }
 ];

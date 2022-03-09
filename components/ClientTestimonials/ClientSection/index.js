@@ -47,7 +47,6 @@ const ClientSectionContent=styled.div`
     color: hsl(213, 9%, 39%);
 `;
 const ClientSectionPersonalInformationContainer=styled.div`
-
 `;
 const ClientSectionPersonalInformationGroup=styled.div`
 `;
@@ -65,3 +64,5 @@ text-align:center;
 font-weight:700;
 `;
 export default ClientSection;
+
+

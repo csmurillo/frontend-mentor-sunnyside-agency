@@ -81,51 +81,45 @@ const FooterSocialFBContainer=styled.div`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
+  &:hover * {
+    fill:white;
+    cursor:pointer;
+  }
 `;
 const FooterSocialFBSvg = styled(FooterSocialFB)`
-  & path{
-    &:hover{
-      fill:white;
-        cursor:pointer;
-    }
-  }
 `;
 const FooterSocialIGContainer=styled.div`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
+  &:hover * {
+    fill:white;
+    cursor:pointer;
+  }
 `;
 const FooterSocialIGSvg =styled(FooterSocialIG)`
-& path{
-  &:hover{
-    fill:white;
-      cursor:pointer;
-  }
-}
 `;
 const FooterSocialTwitterContainer=styled.div`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
+  &:hover * {
+    fill:white;
+    cursor:pointer;
+  }
 `;
 const FooterSocialTwitterSvg=styled(FooterSocialTwitter)`
-& path{
-  &:hover{
-    fill:white;
-      cursor:pointer;
-  }
 }`;
 const FooterSocialPinterestContainer=styled.div`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
+  &:hover * {
+    fill:white;
+    cursor:pointer;
+  }
 `;
 const FooterSocialPinterestSvg=styled(FooterSocialPinterest)`
-& path{
-  &:hover{
-    fill:white;
-      cursor:pointer;
-  }
-}`;
+`;
 
 export default Footer;

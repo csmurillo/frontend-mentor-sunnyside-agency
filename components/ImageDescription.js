@@ -15,7 +15,7 @@ const ImageDescription = ({imageDescriptionSectionName,title,content,imgSrcMobil
         </ImageDescriptionContainer>
     );
 };
-const ImageDescriptionContainer = styled.div`
+const ImageDescriptionContainer = styled.section`
     background-image: ${props => props.imgSrcMobile ? 'url('+props.imgSrcMobile+')' : 'none'};
     height:565px;
     background-position:center;
@@ -39,7 +39,7 @@ const ImageDescriptionTitle = styled.h1`
     font-family: 'Fraunces', serif;
     font-weight: 900;
 `;
-const ImageDescriptionContent = styled.div`
+const ImageDescriptionContent = styled.p`
     text-align:center;
     font-family: 'Barlow', sans-serif;
     font-weight: 600;

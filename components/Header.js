@@ -116,7 +116,7 @@ const MobileNavLinksTriangle = styled.div`
     border-bottom: 30px solid transparent; 
     border-right:30px solid white; 
 `;
-const MobileNavLinks=styled.div`
+const MobileNavLinks=styled.a`
     position:relative;
     width:100%; 
     height:100%;
@@ -126,7 +126,7 @@ const MobileNavBackground =styled.div`
     background-color:white;
     padding:30px;
 `;
-const MobileLinks=styled.div`
+const MobileLinks=styled.a`
     background-color:white;
     padding: 20px 0px 20px 0px;
     & p {

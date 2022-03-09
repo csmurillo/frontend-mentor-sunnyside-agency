@@ -12,7 +12,7 @@ export default () => (
       <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>  
       <title>Frontend Mentor | Sunnyside agency landing page</title>
     </Head>
-    <div>
+    <main>
       <MainSection></MainSection>
       <LearnMoreSection id={1} imgSrcMobile="./images/mobile/image-transform.jpg" imgSrcDesktop="./images/desktop/image-transform.jpg" title="Transform your brand" content="We are a full-service creative agency specializing in helping brands grow fast. Engage your client through compelling visuals that do most of the marketing for you." linkUnderlineColor='hsl(51,100%,92%)' hoverLinklineColor='hsl(51,100%,70%)'></LearnMoreSection>
       <LearnMoreSection id={2} imgSrcMobile="./images/mobile/image-stand-out.jpg" imgSrcDesktop="./images/desktop/image-stand-out.jpg" title="Stand out to the right audience" content="Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places." linkUnderlineColor='hsl(7, 99%, 92%)' hoverLinklineColor='hsl(7, 99%, 70%)'></LearnMoreSection>
@@ -21,7 +21,7 @@ export default () => (
       <ClientTestimonials></ClientTestimonials>
       <Images></Images>
       <Footer></Footer>
-    </div>
+    </main>
   </>
 );
 

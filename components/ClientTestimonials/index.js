@@ -15,7 +15,7 @@ const ClientTestimonials = () =>{
         </ClientTestimonialsContainer>
     );
 };
-const ClientTestimonialsContainer=styled.div`
+const ClientTestimonialsContainer=styled.section`
     padding:60px 35px 60px 35px;
     background-color:rgb(255,251,248);
     @media (min-width: 768px){

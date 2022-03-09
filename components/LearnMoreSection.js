@@ -27,7 +27,7 @@ const LearnMoreSection = ({id,title,content,imgSrcMobile,imgSrcDesktop, linkUnde
         </LearnMoreSectionContainer>
     );
 };
-const LearnMoreSectionContainer = styled.div`
+const LearnMoreSectionContainer = styled.section`
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -65,7 +65,7 @@ const LearnMoreHeader = styled.h1`
         padding-right:120px;
     }
 `;
-const LearnMoreContent = styled.div`
+const LearnMoreContent = styled.p`
     font-family: 'Barlow', sans-serif;
     text-align:center;
     font-size:1.05em;

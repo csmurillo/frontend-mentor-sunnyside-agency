@@ -21,24 +21,24 @@ const Footer = () =>{
             </FooterLinkContainer>
             <FooterSocialsContainer className='center'>
                 <FooterSocialGroupWrap>
-                    <FooterSocialFBContainer>
+                    <FooterSocialFBLink>
                       <FooterSocialFBSvg></FooterSocialFBSvg>
-                    </FooterSocialFBContainer>
-                    <FooterSocialIGContainer>
+                    </FooterSocialFBLink>
+                    <FooterSocialIGLink>
                       <FooterSocialIGSvg></FooterSocialIGSvg>
-                    </FooterSocialIGContainer>
-                    <FooterSocialTwitterContainer>
+                    </FooterSocialIGLink>
+                    <FooterSocialTwitterLink>
                       <FooterSocialTwitterSvg></FooterSocialTwitterSvg>
-                    </FooterSocialTwitterContainer>
-                    <FooterSocialPinterestContainer>
+                    </FooterSocialTwitterLink>
+                    <FooterSocialPinterestLink>
                       <FooterSocialPinterestSvg></FooterSocialPinterestSvg>
-                    </FooterSocialPinterestContainer>
+                    </FooterSocialPinterestLink>
                 </FooterSocialGroupWrap>
             </FooterSocialsContainer>
         </FooterContainer>
     );
 };
-const FooterContainer=styled.div`
+const FooterContainer=styled.footer`
   padding:80px 40px 80px 40px;
   background-color:hsl(168, 34%, 70%);
   font-family: 'Barlow', sans-serif;
@@ -77,7 +77,7 @@ const FooterSocialsContainer=styled.div`
 `;
 const FooterSocialGroupWrap=styled.div`
 `;
-const FooterSocialFBContainer=styled.div`
+const FooterSocialFBLink=styled.a`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
@@ -88,7 +88,7 @@ const FooterSocialFBContainer=styled.div`
 `;
 const FooterSocialFBSvg = styled(FooterSocialFB)`
 `;
-const FooterSocialIGContainer=styled.div`
+const FooterSocialIGLink=styled.a`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
@@ -101,7 +101,7 @@ const FooterSocialIGContainer=styled.div`
 `;
 const FooterSocialIGSvg =styled(FooterSocialIG)`
 `;
-const FooterSocialTwitterContainer=styled.div`
+const FooterSocialTwitterLink=styled.a`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;
@@ -114,7 +114,7 @@ const FooterSocialTwitterContainer=styled.div`
 `;
 const FooterSocialTwitterSvg=styled(FooterSocialTwitter)`
 }`;
-const FooterSocialPinterestContainer=styled.div`
+const FooterSocialPinterestLink=styled.a`
   margin-left:10px;
   margin-right:20px;
   display: inline-block;

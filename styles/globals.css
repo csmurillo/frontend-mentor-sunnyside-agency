@@ -31,3 +31,6 @@ body {
 .pad-bottom-2{
     padding-bottom:20px;
 }
+p{
+    margin:0; padding:0;
+}

@@ -22,7 +22,7 @@ const MainSection = () =>{
     );
 };
 
-const MainSectionContainer = styled.div`
+const MainSectionContainer = styled.section`
     position:relative;
     background-image:url(./images/desktop/image-header.jpg);
     background-position:center;
@@ -43,12 +43,12 @@ const MainSectionBackgroundImage = styled.img`
     z-index:-1;
     object-fit: cover;
 `;
-const MainSectionContent = styled.div`
+const MainSectionContent = styled.h1`
     font-family: 'Fraunces', serif;
     text-align: center;
     text-transform: capitalize;
     color: white;
-    padding:70px 150px 0px 150px;
+    padding:30px 150px 0px 150px;
     font-size:2.5em;
     margin-bottom:60px;
     letter-spacing:6px;

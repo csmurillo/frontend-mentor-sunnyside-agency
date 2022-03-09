@@ -20,7 +20,7 @@ const Images = () =>{
     );
 };
 
-const ImagesContainer=styled.div`
+const ImagesContainer=styled.section`
     display: grid;
     grid-template-columns: 50% 50% 50% 50%;
     grid-template-rows: auto;
